@@ -3,9 +3,10 @@
 
 	<test name="Calculation Grouping and Parameter Scenarios">
 	
-		<parameter name="addition" value="7,7,14"></parameter>
+		<parameter name="addition" value="7,7,7"></parameter>
 		<parameter name="subraction" value="1,2,-1"></parameter>
-		<parameter name="multiplication" value="1,7,7"></parameter>
+		<parameter name="multiplication" value="1,7,11"></parameter>
+		<parameter name="intDivision" value="14,7,2"></parameter>
 	
 	<groups>
 			<run>
@@ -14,7 +15,7 @@
 			</run>
 		</groups>
 		<classes>
-			<class name="com.calculator.parameter.calculatorUsingParameter"></class>
+			<class name="com.calculator.tests.parameter.calculatorUsingParameter"></class>
 		</classes>
 	
 	</test>

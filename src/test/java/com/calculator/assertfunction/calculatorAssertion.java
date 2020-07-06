@@ -16,11 +16,13 @@ public class calculatorAssertion {
 	@BeforeClass
 	public void classSetUp() {
 		System.out.println("Calculator Operations");
+	
 	}
 	
 	@BeforeMethod
 	public void methodSetUp() {
 		System.out.println("Pass New values for Assertions");
+	
 	}
 	
 	@Test (dataProvider="additionData", 
@@ -78,17 +80,17 @@ public class calculatorAssertion {
 	
 	}
 	
-	/*
-	 * @Test (dataProvider="exponentData", dataProviderClass = calculatorData.class,
-	 * groups= "intermittent_calculation") public void calcExponent(double
-	 * number1,double number2, double expected_result) {
-	 * System.out.println("Running Test - calcExponent"); Calculator obj = new
-	 * Calculator(); double result = obj.exp(number1, number2);
-	 * Assert.assertTrue(result == expected_result, "True | Output success");
-	 * Report.log("Actual - "+ result + " Expected - "+expected_result);
-	 * 
-	 * }
-	 */
+	@Test (dataProvider="exponentData", 
+			dataProviderClass = calculatorData.class, 
+			groups= "intermittent_calculation")
+	public void calcExponent(double number1,double number2, double expected_result) {
+		System.out.println("Running Test - calcExponent");
+		Calculator obj = new Calculator();
+		double result = obj.exp(number1, number2);
+		Assert.assertTrue(result == expected_result, "True | Output success");
+		Report.log("Actual - "+ result + " Expected - "+expected_result);
+		
+	}
 	
 	@Test (dataProvider="modulusData", 
 			dataProviderClass = calculatorData.class, 
