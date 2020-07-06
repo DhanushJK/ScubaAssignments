@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Calculation Test Suite]">
+  <test thread-count="5" name="Calculation Grouping and Parameter Scenarios(failed)">
+    <parameter name="subraction" value="1,2,-1"/>
+    <parameter name="multiplication" value="1,7,7"/>
+    <parameter name="addition" value="7,7,14"/>
+    <groups>
+      <run>
+        <include name="basic_calculation"/>
+        <exclude name="intermittent_calculation"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.calculator.parameter.calculatorUsingParameter">
+        <methods>
+          <include name="calcDivInt"/>
+        </methods>
+      </class> <!-- com.calculator.parameter.calculatorUsingParameter -->
+    </classes>
+  </test> <!-- Calculation Grouping and Parameter Scenarios(failed) -->
+</suite> <!-- Failed suite [Calculation Test Suite] -->

@@ -1,0 +1,511 @@
+<html>
+<head>
+<title>TestNG:  Calculator Parallel Classes Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Calculator Parallel Classes Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 06 12:52:06 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (857 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 1, 8, 9<br/>
+<a href="#Output-1541053332" onClick='toggleBox("Output-1541053332", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1541053332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1541053332">
+06-Jul-2020 12:52:07 PM : Actual - 9 Expected - 9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 1, 8, 9<br/>
+<a href="#Output-1907679013" onClick='toggleBox("Output-1907679013", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1907679013" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1907679013">
+06-Jul-2020 12:52:07 PM : Actual - 9 Expected - 9<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 10, 4, 14<br/>
+<a href="#Output-1060858485" onClick='toggleBox("Output-1060858485", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1060858485" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1060858485">
+06-Jul-2020 12:52:07 PM : Actual - 14 Expected - 14<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 10, 4, 14<br/>
+<a href="#Output-552927164" onClick='toggleBox("Output-552927164", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-552927164" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-552927164">
+06-Jul-2020 12:52:07 PM : Actual - 14 Expected - 14<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 5, 77, 82<br/>
+<a href="#Output-1616573599" onClick='toggleBox("Output-1616573599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1616573599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1616573599">
+06-Jul-2020 12:52:07 PM : Actual - 82 Expected - 82<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 5, 77, 82<br/>
+<a href="#Output-694881096" onClick='toggleBox("Output-694881096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-694881096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-694881096">
+06-Jul-2020 12:52:07 PM : Actual - 82 Expected - 82<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcDivInt()'><b>calcDivInt</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 4, 2, 2<br/>
+<a href="#Output-528263257" onClick='toggleBox("Output-528263257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-528263257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-528263257">
+06-Jul-2020 12:52:07 PM : Actual - 2 Expected - 2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcDivInt()'><b>calcDivInt</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 45, 3, 15<br/>
+<a href="#Output-502784312" onClick='toggleBox("Output-502784312", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502784312" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502784312">
+06-Jul-2020 12:52:07 PM : Actual - 15 Expected - 15<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcDivInt()'><b>calcDivInt</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 4, 2, 2<br/>
+<a href="#Output-1639996676" onClick='toggleBox("Output-1639996676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1639996676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1639996676">
+06-Jul-2020 12:52:07 PM : Actual - 2 Expected - 2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcDivInt()'><b>calcDivInt</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 15, 5, 3<br/>
+<a href="#Output-2046511153" onClick='toggleBox("Output-2046511153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2046511153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2046511153">
+06-Jul-2020 12:52:07 PM : Actual - 3 Expected - 3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcDivInt()'><b>calcDivInt</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 45, 3, 15<br/>
+<a href="#Output-764495952" onClick='toggleBox("Output-764495952", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-764495952" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-764495952">
+06-Jul-2020 12:52:07 PM : Actual - 15 Expected - 15<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcDivInt()'><b>calcDivInt</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 15, 5, 3<br/>
+<a href="#Output-1679427893" onClick='toggleBox("Output-1679427893", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1679427893" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1679427893">
+06-Jul-2020 12:52:07 PM : Actual - 3 Expected - 3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcDivReal()'><b>calcDivReal</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 4, 2, 22.0<br/>
+<a href="#Output-376104946" onClick='toggleBox("Output-376104946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-376104946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-376104946">
+06-Jul-2020 12:52:07 PM : Actual - 2.0 Expected - 22.0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcDivReal()'><b>calcDivReal</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 3, 3, 221.0<br/>
+<a href="#Output-1042339358" onClick='toggleBox("Output-1042339358", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1042339358" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1042339358">
+06-Jul-2020 12:52:07 PM : Actual - 1.0 Expected - 221.0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcDivReal()'><b>calcDivReal</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 15, 5, 23.0<br/>
+<a href="#Output-794854380" onClick='toggleBox("Output-794854380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-794854380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-794854380">
+06-Jul-2020 12:52:07 PM : Actual - 3.0 Expected - 23.0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcInverse()'><b>calcInverse</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 4, 32<br/>
+<a href="#Output-1944060393" onClick='toggleBox("Output-1944060393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944060393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944060393">
+06-Jul-2020 12:52:07 PM : Actual - 0.25 Expected - 32.0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcInverse()'><b>calcInverse</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 3, 33<br/>
+<a href="#Output-1198313430" onClick='toggleBox("Output-1198313430", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1198313430" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1198313430">
+06-Jul-2020 12:52:07 PM : Actual - 0.3333333333333333 Expected - 33.0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcInverse()'><b>calcInverse</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 5, 32<br/>
+<a href="#Output-1980634149" onClick='toggleBox("Output-1980634149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1980634149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1980634149">
+06-Jul-2020 12:52:07 PM : Actual - 0.2 Expected - 32.0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcModulus()'><b>calcModulus</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 4, 2, 0<br/>
+<a href="#Output-976901907" onClick='toggleBox("Output-976901907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-976901907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-976901907">
+06-Jul-2020 12:52:07 PM : Actual - 0 Expected - 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcModulus()'><b>calcModulus</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 3, 3, 0<br/>
+<a href="#Output-1363904104" onClick='toggleBox("Output-1363904104", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1363904104" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1363904104">
+06-Jul-2020 12:52:07 PM : Actual - 0 Expected - 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcModulus()'><b>calcModulus</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 10, 2, 0<br/>
+<a href="#Output-1501863815" onClick='toggleBox("Output-1501863815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1501863815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1501863815">
+06-Jul-2020 12:52:07 PM : Actual - 0 Expected - 0<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 1, 2, 2<br/>
+<a href="#Output-1320334749" onClick='toggleBox("Output-1320334749", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1320334749" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1320334749">
+06-Jul-2020 12:52:07 PM : Actual - 2 Expected - 2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 3, 8, 24<br/>
+<a href="#Output-880210546" onClick='toggleBox("Output-880210546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-880210546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-880210546">
+06-Jul-2020 12:52:07 PM : Actual - 24 Expected - 24<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 6, 9, 54<br/>
+<a href="#Output-371862501" onClick='toggleBox("Output-371862501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-371862501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-371862501">
+06-Jul-2020 12:52:07 PM : Actual - 54 Expected - 54<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 1, 2, 2<br/>
+<a href="#Output-1384826572" onClick='toggleBox("Output-1384826572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1384826572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1384826572">
+06-Jul-2020 12:52:07 PM : Actual - 2 Expected - 2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 3, 8, 24<br/>
+<a href="#Output-1644327923" onClick='toggleBox("Output-1644327923", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1644327923" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644327923">
+06-Jul-2020 12:52:07 PM : Actual - 24 Expected - 24<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 6, 9, 54<br/>
+<a href="#Output-1324735146" onClick='toggleBox("Output-1324735146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1324735146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1324735146">
+06-Jul-2020 12:52:07 PM : Actual - 54 Expected - 54<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcNegate()'><b>calcNegate</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 1, -1<br/>
+<a href="#Output-431268088" onClick='toggleBox("Output-431268088", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-431268088" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-431268088">
+06-Jul-2020 12:52:07 PM : Actual - -1 Expected - -1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcNegate()'><b>calcNegate</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 7, -7<br/>
+<a href="#Output-10836695" onClick='toggleBox("Output-10836695", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-10836695" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-10836695">
+06-Jul-2020 12:52:07 PM : Actual - -7 Expected - -7<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcNegate()'><b>calcNegate</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 15, -15<br/>
+<a href="#Output-1239107120" onClick='toggleBox("Output-1239107120", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1239107120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1239107120">
+06-Jul-2020 12:52:07 PM : Actual - -15 Expected - -15<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 1, 2, -1<br/>
+<a href="#Output-892552145" onClick='toggleBox("Output-892552145", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-892552145" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892552145">
+06-Jul-2020 12:52:07 PM : Actual - -1 Expected - -1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 3, 31, -28<br/>
+<a href="#Output-1853228727" onClick='toggleBox("Output-1853228727", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1853228727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1853228727">
+06-Jul-2020 12:52:07 PM : Actual - -28 Expected - -28<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.parallelExecution.calculatorParallel.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.parallelExecution.calculatorParallel<br>Parameters: 9, 7, 2<br/>
+<a href="#Output-1829801065" onClick='toggleBox("Output-1829801065", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1829801065" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1829801065">
+06-Jul-2020 12:52:07 PM : Actual - 2 Expected - 2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parallelExecution.calculatorParallel@757942a1</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 1, 2, -1<br/>
+<a href="#Output-671304824" onClick='toggleBox("Output-671304824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-671304824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-671304824">
+06-Jul-2020 12:52:07 PM : Actual - -1 Expected - -1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 3, 31, -28<br/>
+<a href="#Output-313587113" onClick='toggleBox("Output-313587113", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-313587113" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313587113">
+06-Jul-2020 12:52:07 PM : Actual - -28 Expected - -28<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+<tr>
+<td title='com.calculator.assertfunction.calculatorAssertion.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.assertfunction.calculatorAssertion<br>Parameters: 9, 7, 2<br/>
+<a href="#Output-1668608337" onClick='toggleBox("Output-1668608337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1668608337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1668608337">
+06-Jul-2020 12:52:07 PM : Actual - 2 Expected - 2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.assertfunction.calculatorAssertion@69b0fd6f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>TestNG:  Calculation Grouping and Parameter Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Calculation Grouping and Parameter Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 06 12:51:52 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (808 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>basic_calculation </td>
+</tr><tr>
+<td>Excluded groups:</td><td>intermittent_calculation </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.calculator.parameter.calculatorUsingParameter.calcAddition()'><b>calcAddition</b><br>Test class: com.calculator.parameter.calculatorUsingParameter<br>Parameters: 7,7,14<br/>
+<a href="#Output-9797126" onClick='toggleBox("Output-9797126", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-9797126" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-9797126">
+06-Jul-2020 12:51:53 PM : actual - 14 expected - 14<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parameter.calculatorUsingParameter@1b26f7b2</td></tr>
+<tr>
+<td title='com.calculator.parameter.calculatorUsingParameter.calcMultiplication()'><b>calcMultiplication</b><br>Test class: com.calculator.parameter.calculatorUsingParameter<br>Parameters: 1,7,7<br/>
+<a href="#Output-1225038340" onClick='toggleBox("Output-1225038340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1225038340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1225038340">
+06-Jul-2020 12:51:53 PM : actual - 7 expected - 7<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parameter.calculatorUsingParameter@1b26f7b2</td></tr>
+<tr>
+<td title='com.calculator.parameter.calculatorUsingParameter.calcSubraction()'><b>calcSubraction</b><br>Test class: com.calculator.parameter.calculatorUsingParameter<br>Parameters: 1,2,-1<br/>
+<a href="#Output-1906879951" onClick='toggleBox("Output-1906879951", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1906879951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1906879951">
+06-Jul-2020 12:51:53 PM : actual - -1 expected - -1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.calculator.parameter.calculatorUsingParameter@1b26f7b2</td></tr>
+</table><p>
+</body>
+</html>
