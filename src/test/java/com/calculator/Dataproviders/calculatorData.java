@@ -8,9 +8,9 @@ public class calculatorData {
 	public Object[][] getAdditionData() {
 		return new Object[][] {
 			//{number1 , number2 , Result}
-			{1, 8, 3},
-			{10, 4, 7},
-			{5, 77, 11}
+			{1, 8, 9},
+			{10, 4, 14},
+			{5, 77, 82}
 		};
 	}
 	
@@ -19,8 +19,8 @@ public class calculatorData {
 		return new Object[][] {
 			//{number1 , number2 , Result}
 			{1, 2, -1},
-			{3, 31, 1},
-			{9, 7, 5}
+			{3, 31, -28},
+			{9, 7, 2}
 		};
 	}
 	
@@ -29,8 +29,8 @@ public class calculatorData {
 		return new Object[][] {
 			//{number1 , number2 , Result}
 			{1, 2, 2},
-			{3, 8, 9},
-			{6, 9, 27}
+			{3, 8, 24},
+			{6, 9, 54}
 		};
 	}
 	
@@ -58,9 +58,9 @@ public class calculatorData {
 	public Object[][] getcalcExponent() {
 		return new Object[][] {
 			//{number1 , number2 , Result}
-			{4, 2, 16},
-			{6, 3, 27},
-			{5, 5, 25}
+			{4, 2, 2},
+			{6, 3, 2},
+			{5, 5, 1}
 		};
 	}
 	

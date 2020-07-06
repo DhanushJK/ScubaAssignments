@@ -18,7 +18,7 @@ public class calculatorUsingParameter {
 		Calculator obj = new Calculator();
 		int result = obj.add(Integer.parseInt(stringArray[0]), Integer.parseInt(stringArray[1]));
 		Assert.assertEquals(result, Integer.parseInt(stringArray[2]));
-		Report.log("Actual - "+ result + " Expected - "+Integer.parseInt(stringArray[2]));
+		Report.log("actual - "+ result + " expected - "+Integer.parseInt(stringArray[2]));
 	}
 	
 	@Test (groups= "basic_calculation")
@@ -29,7 +29,7 @@ public class calculatorUsingParameter {
 		Calculator obj = new Calculator();
 		int result = obj.sub(Integer.parseInt(stringArray[0]), Integer.parseInt(stringArray[1]));
 		Assert.assertEquals(result, Integer.parseInt(stringArray[2]));
-		Report.log("Actual - "+ result + " Expected - "+Integer.parseInt(stringArray[2]));
+		Report.log("actual - "+ result + " expected - "+Integer.parseInt(stringArray[2]));
 	}
 	
 	@Test (groups= "basic_calculation")
@@ -40,20 +40,22 @@ public class calculatorUsingParameter {
 		Calculator obj = new Calculator();
 		int result = obj.mul(Integer.parseInt(stringArray[0]), Integer.parseInt(stringArray[1]));
 		Assert.assertEquals(result, Integer.parseInt(stringArray[2]));
-		Report.log("Actual - "+ result + " Expected - "+Integer.parseInt(stringArray[2]));
+		Report.log("actual - "+ result + " expected - "+Integer.parseInt(stringArray[2]));
 	
 	}
 	
-	@Test (groups= "basic_calculation")
-	@Parameters({"intDivision"})
-	public void calcDivInt(String data) {
-		System.out.println("\nRunning Test -> calcDivInt");
-		String[] stringArray = data.split(",");
-		Calculator obj = new Calculator();
-		int result = obj.divInt(Integer.parseInt(stringArray[0]), Integer.parseInt(stringArray[1]));
-		Assert.assertEquals(result, Integer.parseInt(stringArray[2]));
-		Report.log("Actual - "+ result + " Expected - "+Integer.parseInt(stringArray[2]));
-	
-	}
+	/*
+	 * @Test (groups= "basic_calculation")
+	 * 
+	 * @Parameters({"intDivision"}) public void calcDivInt(String data) {
+	 * System.out.println("\nRunning Test -> calcDivInt"); String[] stringArray =
+	 * data.split(","); Calculator obj = new Calculator(); int result =
+	 * obj.divInt(Integer.parseInt(stringArray[0]),
+	 * Integer.parseInt(stringArray[1])); Assert.assertEquals(result,
+	 * Integer.parseInt(stringArray[2])); Report.log("Actual - "+ result +
+	 * " Expected - "+Integer.parseInt(stringArray[2]));
+	 * 
+	 * }
+	 */
 
 }
